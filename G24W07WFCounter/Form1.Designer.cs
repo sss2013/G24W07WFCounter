@@ -31,7 +31,7 @@
             labelCount = new Label();
             btnAdd = new Button();
             btnSub = new Button();
-            button1 = new Button();
+            btnInit = new Button();
             SuspendLayout();
             // 
             // labelCount
@@ -62,29 +62,29 @@
             btnSub.AccessibleRole = AccessibleRole.None;
             btnSub.Location = new Point(157, 205);
             btnSub.Name = "btnSub";
-            btnSub.Size = new Size(126, 43);
+            btnSub.Size = new Size(140, 43);
             btnSub.TabIndex = 2;
             btnSub.Text = "감소";
             btnSub.UseVisualStyleBackColor = true;
             btnSub.Click += OnSub;
             // 
-            // button1
+            // btnInit
             // 
-            button1.AccessibleRole = AccessibleRole.None;
-            button1.Location = new Point(318, 205);
-            button1.Name = "button1";
-            button1.Size = new Size(126, 43);
-            button1.TabIndex = 3;
-            button1.Text = "초기화";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += On_init;
+            btnInit.AccessibleRole = AccessibleRole.None;
+            btnInit.Location = new Point(318, 205);
+            btnInit.Name = "btnInit";
+            btnInit.Size = new Size(126, 43);
+            btnInit.TabIndex = 3;
+            btnInit.Text = "초기화";
+            btnInit.UseVisualStyleBackColor = true;
+            btnInit.Click += On_init;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(444, 260);
-            Controls.Add(button1);
+            Controls.Add(btnInit);
             Controls.Add(btnSub);
             Controls.Add(btnAdd);
             Controls.Add(labelCount);
@@ -99,6 +99,6 @@
         private Label labelCount;
         private Button btnAdd;
         private Button btnSub;
-        private Button button1;
+        private Button btnInit;
     }
 }
